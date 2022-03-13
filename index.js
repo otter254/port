@@ -34,8 +34,8 @@ $(window).on('resize scroll', function(){
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrapper'),
   intensity: 0.5,
-  image1: './files/images/mountain.png',
-  image2: './files/images/mountain_after.png',
+  image1: './files/topimages/mountain.png',
+  image2: './files/topimages/mountain_after.png',
   displacementImage: '4.png'
 });
 
@@ -78,8 +78,8 @@ delay: (el, i) => 40 * i
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrappertwo'),
   intensity: 0.5,
-  image1: './files/images/img02.png',
-  image2: './files/images/img02.png',
+  image1: './files/topimages/img02.png',
+  image2: './files/topimages/img02.png',
   displacementImage: '4.png'
 });
 
@@ -122,8 +122,8 @@ delay: (el, i) => 40 * i
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrapperthree'),
   intensity: 0.5,
-  image1: './files/images/img03.png',
-  image2: './files/images/img03_after.png',
+  image1: './files/topimages/img03.png',
+  image2: './files/topimages/img03_after.png',
   displacementImage: '4.png'
 });
 
@@ -166,8 +166,8 @@ delay: (el, i) => 40 * i
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrapperfour'),
   intensity: 0.5,
-  image1: './files/images/img03.png',
-  image2: './files/images/img03_after.png',
+  image1: './files/topimages/img03.png',
+  image2: './files/topimages/img03_after.png',
   displacementImage: '4.png'
 });
 
@@ -204,4 +204,44 @@ delay: (el, i) => 40 * i
 }
 );
   
+});
+
+
+
+//カーソル
+let cursorR = 4;  //カーソルの半径
+const cursor = document.getElementById('cursor');  //カーソル用のdivを取得
+
+//上記のdivタグをマウスに追従させる処理
+document.addEventListener('mousemove', function (e) {
+    cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+});
+
+//リンクにホバー時はクラスをつける
+const linkElem = document.querySelectorAll('a');
+for (let i = 0; i < linkElem.length; i++) {
+    linkElem[i].addEventListener('mouseover', function (e) {
+        cursor.classList.add('hov_');
+    });
+    linkElem[i].addEventListener('mouseout', function (e) {
+        cursor.classList.remove('hov_');      
+    });
+}
+
+// swiper
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
