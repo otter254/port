@@ -54,50 +54,6 @@
 			</a>
 		</div>
 	</div>
-	<div class="slider_sp">
-		<!-- Swiper -->
-		<div class="swiper mySwiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="./files/topimages/img03.png" alt="">
-					</div>
-					<div class="datails">
-						<h3>ANIMAL</h3>
-					</div>
-				</div>
-
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="./files/topimages/img03.png" alt="">
-					</div>
-					<div class="datails">
-						<h3>ANIMAL</h3>
-					</div>
-				</div>
-
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="./files/topimages/img03.png" alt="">
-					</div>
-					<div class="datails">
-						<h3>ANIMAL</h3>
-					</div>
-				</div>
-
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="./files/topimages/img03.png" alt="">
-					</div>
-					<div class="datails">
-						<h3>ANIMAL</h3>
-					</div>
-				</div>
-
-			</div>
-			<div class="swiper-pagination"></div>
-		</div>
-	</div>
 	<button>
 		<a href="/product/index.html">
 			MORE
@@ -117,26 +73,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
 <script src="hover-effect.umd.js"></script> -->
-
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-	//PC環境の場合
-	if (window.matchMedia( '(min-width: 767px)' ).matches) {　//切り替える画面サイズ
-		$.ajax({
-			url: 'index.js',
-			dataType: 'script',
-			cache: false
-	  });
-	//モバイル環境の場合
-	} else {
-	   $.ajax({
-			url: '',
-			dataType: 'swiper.js',
-			cache: false
-		});
-	};
-});
-</script>
+<script src="index.js"></script>
 
 
 </html>
