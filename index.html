@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/top.css">
+	<link rel="stylesheet" href="/css/top.css">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 </head>
@@ -117,7 +117,26 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
 <script src="hover-effect.umd.js"></script> -->
-<script src="index.js"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	//PC環境の場合
+	if (window.matchMedia( '(min-width: 767px)' ).matches) {　//切り替える画面サイズ
+		$.ajax({
+			url: 'index.js',
+			dataType: 'script',
+			cache: false
+	  });
+	//モバイル環境の場合
+	} else {
+	   $.ajax({
+			url: '',
+			dataType: 'swiper.js',
+			cache: false
+		});
+	};
+});
+</script>
 
 
 </html>
