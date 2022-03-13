@@ -1,0 +1,21 @@
+/* TOPのヘッダーはtop.cssに記載 */
+
+header {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Limelight', cursive;
+    padding: 0 5%;
+}
+
+header .title {
+    color: #fff;
+}
+header .menu {
+    color: #fff;
+}
