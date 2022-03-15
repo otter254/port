@@ -232,10 +232,10 @@ document.addEventListener('mousemove', function (e) {
 const menuBtn =document.querySelector(".menuBtn");
 const exitBtn =document.querySelector(".exit");
 
-
-
-
 $('.menuBtn').on('click', function(){
   TweenMax.to(".menu", 1, {opacity: 1, top:0 , zIndex:1})
-  console.log("menuBtn clicked");
-});
+}),
+
+$('.exit').on('click', function(){
+  TweenMax.to(".menu", 1, {opacity: 0, top:-40 , zIndex:0})
+})
