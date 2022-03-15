@@ -2,7 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(2,2,2);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header {
@@ -18,48 +24,99 @@ header {
     padding: 0 5%;
 }
 
-header .title {
+header .nav-logo {
     color: #fff;
+    font-size: 2rem;
 }
-header .menu {
+header .nav-menu {
     color: #fff;
+    cursor: pointer;
 }
-#container{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+/* menu */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    top: -20%;
+    padding: 0 50px;
+    opacity: 0;
 }
-@media (max-width: 767px) { 
+.menu .backgroung {
+    position: absolute;
+    font-size: 14rem;
+    color: rgb(255, 255, 255, .1);
+    z-index: -1;
+}
+.exit {
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
 
-.slide{
-  display: block;
-  position: absolute;
-  height: 200px !important;
-  width: 400px !important;
+.nav-link {
+    font-size: 4rem;
+    transition: all 0.2s ease-in-out;
 }
-.slide img {
-    width: 100%;
+.nav-link:hover {
+    color: rgb(68, 68, 68);
+    transition: all 0.2s ease-in-out;
 }
-.slide.one {
-    top: 0;
+.nav-link span {
+    font-size: 1.5rem;
+    margin-left: 2rem;
 }
-.slide.two {
-    top: 30vh;
-    right: -20vw;
+.menu-container .infomation {
+    margin-bottom: 20px;
 }
-.slide.three {
-    bottom: 0;
-    left: -50px;
+.menu-container .title {
+    color: rgb(160, 155, 151);
+    font-size: 2rem;
 }
-.slide.four {
-    bottom: -20vh;
-    right: 10vw;
+
+@media (min-width: 767px) { 
+    #container{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: rgb(2,2,2);
+      }
+      .slide{
+        display: block;
+        position: absolute;
+        height: 200px !important;
+        width: 400px !important;
+      }
+      .slide img {
+          width: 100%;
+      }
+      .slide.one {
+          top: 0;
+      }
+      .slide.two {
+          top: 30vh;
+          right: -20vw;
+      }
+      .slide.three {
+          bottom: 0;
+          left: -50px;
+      }
+      .slide.four {
+          bottom: -20vh;
+          right: 10vw;
+      }
 }
+
+
 
 button {
     position: fixed;
@@ -136,10 +193,19 @@ button a {
     opacity: 0;
     background: none;
 }
+@media (max-width: 767px) {
+    .wrapper,
+    .wrappertwo,
+    .wrapperthree,
+    .wrapperfour {
+        position: unset;
+        width: 90vw;
+    }
+}
 
 
 /* カーソル */
-html,body,a{
+/* html,body,a{
     cursor: none;
 }
 #cursor{
@@ -161,4 +227,4 @@ html,body,a{
     width: 70px;   
     height: 70px;  
     background: rgba(255, 255, 255,0.5);
-}
+} */
