@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Gazebo';
+    src: url('../fonts/Gazebo.otf') format('opentype');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -14,23 +19,41 @@ a {
 header {
     position: fixed;
     top: 0;
-    height: 10vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Limelight', cursive;
-    padding: 0 5%;
+    padding: 2% 5%;
 }
 
 header .nav-logo {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Clash Display', sans-serif;
 }
 header .nav-menu {
     color: #fff;
     cursor: pointer;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+header .nav-menu span{
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #fff;
+    position: absolute;
+    left: calc(50% - 15px);
+}
+header .nav-menu span:first-of-type {
+    top: calc(50% + 5px);
+}
+header .nav-menu span:last-of-type {
+    top: calc(50% - 5px);
 }
 /* menu */
 .menu {
@@ -180,7 +203,8 @@ button a {
     left: 15%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Limelight', cursive;
+    font-family: "Gazebo";
+    letter-spacing: .5rem;
     font-size: 3rem;
     background: none;
 }
@@ -205,7 +229,7 @@ button a {
 
 
 /* カーソル */
-/* html,body,a{
+html,body,a{
     cursor: none;
 }
 #cursor{
@@ -227,4 +251,4 @@ button a {
     width: 70px;   
     height: 70px;  
     background: rgba(255, 255, 255,0.5);
-} */
+}

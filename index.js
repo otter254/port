@@ -218,17 +218,19 @@ document.addEventListener('mousemove', function (e) {
 });
 
 //リンクにホバー時はクラスをつける
-// const linkElem = document.querySelectorAll('a');
-// for (let i = 0; i < linkElem.length; i++) {
-//     linkElem[i].addEventListener('mouseover', function (e) {
-//         cursor.classList.add('hov_');
-//     });
-//     linkElem[i].addEventListener('mouseout', function (e) {
-//         cursor.classList.remove('hov_');      
-//     });
-// }
+const linkElem = document.querySelectorAll('a');
+for (let i = 0; i < linkElem.length; i++) {
+    linkElem[i].addEventListener('mouseover', function (e) {
+        cursor.classList.add('hov_');
+    });
+    linkElem[i].addEventListener('mouseout', function (e) {
+        cursor.classList.remove('hov_');      
+    });
+}
 
 
+
+// ハンバーガーメニュー
 const menuBtn =document.querySelector(".menuBtn");
 const exitBtn =document.querySelector(".exit");
 
