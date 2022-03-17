@@ -3,6 +3,12 @@
     src: url('../fonts/Gazebo.otf') format('opentype');
 }
 
+@media (max-width: 767px) { 
+    .l-sm {
+        display: none;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -218,12 +224,33 @@ button a {
     background: none;
 }
 @media (max-width: 767px) {
+    #container{
+        background-color: rgb(2,2,2);
+        position: relative;
+      }
     .wrapper,
     .wrappertwo,
     .wrapperthree,
     .wrapperfour {
-        position: unset;
+        position: inherit;
         width: 90vw;
+        transform: none;
+    }
+    .wrapper {
+        width: 100%;
+        height: 40vh;
+    }
+    .wrappertwo {
+        width: 100%;
+        height: 40vh;
+    }
+    .wrapperthree {
+        width: 100%;
+        height: 40vh;
+    }
+    .wrapperfour {
+        width: 100%;
+        height: 40vh;
     }
 }
 
