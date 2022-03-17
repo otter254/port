@@ -232,12 +232,16 @@ for (let i = 0; i < linkElem.length; i++) {
 
 // ハンバーガーメニュー
 const menuBtn =document.querySelector(".menuBtn");
-const exitBtn =document.querySelector(".exit");
+// const exitBtn =document.querySelector(".exit");
 
 $('.menuBtn').on('click', function(){
   TweenMax.to(".menu", 1, {opacity: 1, top:0 , zIndex:1})
-}),
-
-$('.exit').on('click', function(){
-  TweenMax.to(".menu", 1, {opacity: 0, top:-40 , zIndex:0})
+  $(this).addClass("active");
 })
+
+// $('.exit').on('click', function(){
+//   TweenMax.to(".menu", 1, {opacity: 0, top:-20 , zIndex:0})
+//   $(".menu").removeClass("active");
+// })
+
+
