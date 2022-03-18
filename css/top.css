@@ -223,11 +223,12 @@ button a {
     opacity: 0;
     background: none;
 }
+#container{
+    background: rgb(2,2,2);
+    position: relative;
+  }
 @media (max-width: 767px) {
-    #container{
-        background-color: rgb(2,2,2);
-        position: relative;
-      }
+
     .wrapper,
     .wrappertwo,
     .wrapperthree,
