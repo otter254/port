@@ -241,6 +241,7 @@ button a {
 @media (max-width: 767px) {
     #container {
         padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     h2 {
         color: #fff;
@@ -275,10 +276,8 @@ button a {
     .slide{
         width: 90vw;
         margin: 0 auto 10vh;
-      }
-      .slide img {
-          width: 100%;
-      }
+    }
+
 }
 
 
