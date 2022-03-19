@@ -3,15 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.container .item {
-    border-right: 1px solid #333;
-}
-.container .item div {
+img {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
+
+.galley {
+    margin: 0 0 0.65rem;
+} 
+
+.galley-item{
+    height: auto;
+    margin: .5rem;
+} 
+.galley-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+@media (min-width: 767px) {
+    .galley {
+        display: grid;
+    }
+}
+
