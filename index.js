@@ -208,40 +208,47 @@ delay: (el, i) => 40 * i
 
 
 
-//カーソル
-let cursorR = 4;  //カーソルの半径
-const cursor = document.getElementById('cursor');  //カーソル用のdivを取得
+// sp・タブレットでもない場合
+if (!(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0)) {
+  //カーソル
+  let cursorR = 4;  //カーソルの半径
+  const cursor = document.getElementById('cursor');  //カーソル用のdivを取得
 
-//上記のdivタグをマウスに追従させる処理
-document.addEventListener('mousemove', function (e) {
-    cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-});
+  //上記のdivタグをマウスに追従させる処理
+  document.addEventListener('mousemove', function (e) {
+      cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+  });
 
-//リンクにホバー時はクラスをつける
-const linkElem = document.querySelectorAll('a');
-for (let i = 0; i < linkElem.length; i++) {
-    linkElem[i].addEventListener('mouseover', function (e) {
-        cursor.classList.add('hov_');
-    });
-    linkElem[i].addEventListener('mouseout', function (e) {
-        cursor.classList.remove('hov_');      
-    });
+  //リンクにホバー時はクラスをつける
+  const linkElem = document.querySelectorAll('a');
+  for (let i = 0; i < linkElem.length; i++) {
+      linkElem[i].addEventListener('mouseover', function (e) {
+          cursor.classList.add('hov_');
+      });
+      linkElem[i].addEventListener('mouseout', function (e) {
+          cursor.classList.remove('hov_');      
+      });
+  }
 }
 
 
+var controlit = $("svg");  
+var menuToggle = new TimelineMax({paused:true, reversed:true});
+menuToggle  
+  .set('', {className:"-=closemenu"})
+  .set('', {className:"+=openmenu"})
+  .to(' .top', .2, {y:'-9px', transformOrigin: '50% 50%'}, 'burg')
+  .add('rotate')
+  .to(' .top', .2, {y:'5'}, 'rotate')
+  .to(' .bot', .2, {y:'-5'}, 'rotate')
+  .to(' .top', .2, {rotationZ:45, transformOrigin: '50% 50%'}, 'rotate')
+  .to(' .bot', .2, {rotationZ:-45, transformOrigin: '50% 50%'}, 'rotate')
 
-// ハンバーガーメニュー
-const menuBtn =document.querySelector(".menuBtn");
-// const exitBtn =document.querySelector(".exit");
+  .to(' .menu', 1, {opacity: 1, top:0 , zIndex:1}, 'rotate')
 
-$('.menuBtn').on('click', function(){
-  TweenMax.to(".menu", 1, {opacity: 1, top:0 , zIndex:1})
-  $(this).addClass("active");
-})
 
-// $('.exit').on('click', function(){
-//   TweenMax.to(".menu", 1, {opacity: 0, top:-20 , zIndex:0})
-//   $(".menu").removeClass("active");
-// })
 
+controlit.click(function () {
+  menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
+});
 
