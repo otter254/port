@@ -17,43 +17,78 @@
 
 
 <body>
-	<header>
-		<div class="title"><a>PORTFPRIO</a></div>
-		<div class="menu"><span>aaa</span></div>
+	<header class="nav-bar">
+		<div class="nav-logo"><a href="/">PortFolio</a></div>
+		<div class="nav-menu menuBtn">
+			<svg id="burger" width="30" class="openmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+				<path class="top" d="M0 9h30v2H0z"/>
+				<path class="bot" d="M0 19h30v2H0z"/>
+			  </svg>
+		</div>
 	</header>
+	<div class="menu">
+		<div class="backgroung">MENU</div>
+		<div class="menu-container">
+			<ul class="nav-list">
+				<li><a href="" class="nav-link">home<span class="numbers">01</span></a></li>
+				<li><a href="" class="nav-link">about<span class="numbers">02</span></a></li>
+				<li><a href="" class="nav-link">contact<span class="numbers">03</span></a></li>
+			</ul>
+		</div>
+		<div class="menu-container l-pc">
+			<div class="infomation">
+				<h3 class="title">Where am I ?</h3>
+				<p class="stuff">address</p>
+			</div>
+			<div class="infomation">
+				<h3 class="title">contact</h3>
+				<p class="stuff">@ezweb</p>
+			</div>
+			<div class="infomation">
+				<h3 class="title">Follow me</h3>
+				<p class="stuff">insta</p>
+			</div>
+		</div>
+	</div>
+	<main>
+		<div class="galley">
+			<div class="galley-item">
+				<img src="/files/images/img02.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/img03.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/img02_after.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/img03_after.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/mountain.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/mountain_after.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/img03.png" alt="">
+			</div>
+			<div class="galley-item">
+				<img src="/files/images/img03.png" alt="">
+			</div>
+		</div>
+	</main>
 
-	<div class="galley">
-		<div class="galley-item">
-			<img src="/files/images/img02.png" alt="">
-		</div>
-		<div class="galley-item">
-			<img src="/files/images/img03.png" alt="">
-		</div>
-		<div class="galley-item">
-			<img src="/files/images/img02_after.png" alt="">
-		</div>
-		<div class="galley-item">
-			<img src="/files/images/img03_after.png" alt="">
-		</div>
-		<div class="galley-item">
-			<img src="/files/images/mountain.png" alt="">
-		</div>
-		<div class="galley-item">
-			<img src="/files/images/mountain_after.png" alt="">
-		</div>
 
 
 	</div>
 
-
-
-	</div>
-
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 </body>
 
-<script src="index.js"></script>
+<script src="/js/hamburger.js"></script>
 
 
 </html>
