@@ -10,17 +10,41 @@ a {
     text-decoration: none;
     color: rgb(2, 2, 2);
 }
+#logo.active {
+    color: #fff;
+}
 img {
     width: 100%;
     height: auto;
 }
 main {
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
 header .nav-menu {
     fill: rgb(2, 2, 2);
     border: 1px solid rgb(2, 2, 2);
 }
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+.background ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+}
+.background ul li {
+    border-right: 1px solid #333;
+}
+.background ul li:last-of-type {
+    border-right: none;
+}
+
 
 .galley {
     margin: 0 0 0.65rem;

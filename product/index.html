@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/product.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,9 @@
 </head>
 
 
-<body>
+<body id="product">
 	<header class="nav-bar">
-		<div class="nav-logo"><a href="../index.html">PortFolio</a></div>
+		<div class="nav-logo"><a href="../index.html" id="logo">PortFolio</a></div>
 		<div class="nav-menu menuBtn">
 			<svg id="burger" width="30" class="openmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
 				<path class="top" d="M0 9h30v2H0z"/>
@@ -51,6 +52,19 @@
 		</div>
 	</div>
 	<main>
+		<div class="background">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="title--main">
+			<h2>ALL WORK</h2>
+		</div>
 		<div class="galley">
 			<div class="galley-item">
 				<img src="../files/images/img02.png" alt="">
@@ -85,9 +99,10 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
+	<div id="cursor"></div>
 </body>
 
+<script src="../js/product.js"></script>
 <script src="../js/hamburger.js"></script>
 
 
