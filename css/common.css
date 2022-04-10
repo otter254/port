@@ -1,17 +1,47 @@
+.l-lg {
+    display: block;
+}
+.l-sm {
+    display: none;
+}
+@media (max-width: 767px) { 
+    .l-lg {
+        display: none;
+    }
+    .l-sm {
+        display: block;
+    }
+}
+
 .title--main {
     width: calc((100% / 6) * 2);
     margin: auto;
     background: #fff;
     text-align: center;
     padding-block: 20px;
-    border: 1px solid #333;
+    border: 1px solid #3e3e3e;
     border-left: none;
     margin-block: 10vh;
 }
+@keyframes titleanimation {
+    0%{
+        letter-spacing: .7rem;
+        opacity: 0;
+    }
+}
 .title--main h2 {
     font-family: 'Clash Display', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
+    animation: titleanimation 1.5s;
+    letter-spacing: .3rem;
+    color: #3e3e3e;
+}
+
+@media (max-width: 767px) { 
+    .title--main {
+        width: calc(100% - 40vw);
+    }
 }
 
 /* カーソル pcのみ*/

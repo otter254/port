@@ -22,6 +22,7 @@ if (!(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('
   }
 }
 
+//ハンバーガーメニュー
 const menu = document.getElementById('burger')
 const logo = document.getElementById('logo')
 menu.addEventListener('click' , function(event){
@@ -33,4 +34,24 @@ menu.addEventListener('mouseover' , function(event){
 })
 menu.addEventListener('mouseout' , function(event){
   cursor.classList.remove('hov_');
+})
+
+// const title = document.getElementById("title")
+// console.log(title)
+// title.classList.add("show")
+
+// スクロールイベント
+const targetElement = document.querySelectorAll(".galley-item");
+console.log(window.innerHeight)
+document.addEventListener("scroll", function() {
+  for (let i = 0; i < targetElement.length; i++) {
+    const getElementDistance = targetElement[i]
+    .getBoundingClientRect().top + targetElement[i].clientHeight * .6
+    // if (i == 1) {
+    //   console.log(getElementDistance)
+    // }
+    if (window.innerHeight > getElementDistance) {
+      targetElement[i].classList.add("show")
+    }
+  }
 })
