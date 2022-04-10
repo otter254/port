@@ -18,13 +18,19 @@ img {
     height: auto;
 }
 main {
-    margin-top: 30vh;
+    margin-top: 40vh;
+}
+@media (max-width: 767px) {
+    main {
+        margin-top: 30vh;
+    }
 }
 header .nav-menu {
     fill: rgb(2, 2, 2);
     border: 1px solid rgb(2, 2, 2);
 }
 
+/* 背景線 */
 .background {
     position: fixed;
     top: 0;
@@ -45,6 +51,12 @@ header .nav-menu {
     border-right: none;
 }
 
+@media (max-width: 767px) {
+    .background ul {
+        grid-template-columns: 20vw 1fr 20vw;
+    }
+}
+
 
 .galley {
     margin: 0 0 0.65rem;
@@ -55,7 +67,14 @@ header .nav-menu {
 .galley-item{
     height: auto;
     margin: .5rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
 } 
+.galley-item.show {
+    opacity: 1;
+    transform: none;
+}
 .galley-item img {
     width: 100%;
     height: 100%;
