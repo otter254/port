@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 5%;
+    padding: 30px 5%;
 }
 
 header .nav-logo {
@@ -32,6 +32,11 @@ header .nav-menu {
     fill: #fff;
     display: flex;
     justify-content: center;
+    cursor: none;
+}
+header.is_open .nav-menu #burger .top,
+header.is_open .nav-menu #burger .bot {
+    fill: #333;
 }
 header .nav-menu:hover {
     fill: rgb(2,2,2);
@@ -65,6 +70,9 @@ header .nav-menu span:last-of-type {
     z-index: 1;
     bottom: 100vh;
 }
+#product .menu_bg {
+    background: rgb(2, 2, 2);
+}
 .menu_bg.bg_01 {
     left: 0;
 }
@@ -84,10 +92,8 @@ header .nav-menu span:last-of-type {
 .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
     color: #fff;
-    height: 80vh;
+    height: calc(100vh - 119px);
     width: 100%;
     position: fixed;
     padding: 0 50px;
@@ -95,17 +101,22 @@ header .nav-menu span:last-of-type {
     font-family: 'Clash Display', sans-serif;
     bottom: 100vh;
 }
-
 .nav-link {
     font-size: 4rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     opacity: 0;
     color: #333;
     z-index: 2;
+    margin-left: 5%;
+    position: relative;
+    top: 20px;
+}
+#product a.nav-link{
+    color: #fff;
 }
 .nav-link:hover {
-    color: rgb(68, 68, 68);
-    transition: all 0.2s ease-in-out;
+    color: rgb(168, 162, 162);
+    transition: all 0.4s ease-in-out;
 }
 .nav-link span {
     font-size: 1.5rem;

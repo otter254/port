@@ -20,7 +20,9 @@ menuToggle
   .to(' .bg_04', .3, { bottom:0 }, '-= .2')
   .to(' .bg_05', .3, { bottom:0 }, '-= .2')
   .to(' .menu', .3, { bottom:0 }, '-= .2')
-  .to(' .nav-link', .3, { top:'20%', opacity: 1 }, ),
+  .to(' .nav-link01', .5, { top: 0, opacity: 1 }, '-= .3')
+  .to(' .nav-link02', .5, { top: 0, opacity: 1 }, '-= .3')
+  .to(' .nav-link03', .5, { top: 0, opacity: 1 }, '-= .3') ,
   
 
 controlit.click(function () {
