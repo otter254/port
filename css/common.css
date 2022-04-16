@@ -62,6 +62,9 @@
         z-index: 999;
         transition: width .3s, height .3s, top .3s, left .3s;
     }
+    #cursor.is_open {
+        background: rgba(14, 14, 14, 0.75);
+    }
     #product #cursor {
         background: rgba(14, 14, 14, 0.75);
     }
