@@ -78,4 +78,7 @@
         height: 70px;  
         background: rgba(255, 255, 255,0.5);
     }
+    #cursor.is_open.hov_{
+        background: rgba(53, 53, 53, 0.5);
+    }
 }
