@@ -18,6 +18,9 @@ header .nav-logo {
     font-size: 3rem;
     font-family: 'Clash Display', sans-serif;
 }
+header.is_open .nav-logo a{
+    color: #333;
+}
 header .nav-menu {
     color: #fff;
     cursor: pointer;
@@ -35,6 +38,10 @@ header .nav-menu:hover {
     background: #fff;
     transition-duration: .7s;
 }
+header.is_open .nav-menu {
+    color: #333;
+    border: 1px solid #333;
+}
 
 header .nav-menu span{
     display: block;
@@ -50,6 +57,29 @@ header .nav-menu span:first-of-type {
 header .nav-menu span:last-of-type {
     top: calc(50% - 5px);
 }
+.menu_bg {
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+    bottom: 100vh;
+}
+.menu_bg.bg_01 {
+    left: 0;
+}
+.menu_bg.bg_02 {
+    left: 20%;
+}
+.menu_bg.bg_03{
+    left: 40%;
+}
+.menu_bg.bg_04 {
+    left: 60%;
+}
+.menu_bg.bg_05 {
+    left: 80%;
+}
 /* menuの中 */
 .menu {
     display: flex;
@@ -57,25 +87,21 @@ header .nav-menu span:last-of-type {
     justify-content: space-between;
     flex-direction: row;
     color: #fff;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background-color: rgb(10, 10, 10);
     position: fixed;
-    bottom: 100vh;
     padding: 0 50px;
     z-index: 1;
     font-family: 'Clash Display', sans-serif;
+    bottom: 100vh;
 }
-.menu .backgroung {
-    position: absolute;
-    font-size: 14rem;
-    color: rgb(255, 255, 255, .1);
-    z-index: -1;
-}
+
 .nav-link {
     font-size: 4rem;
     transition: all 0.2s ease-in-out;
     opacity: 0;
+    color: #333;
+    z-index: 2;
 }
 .nav-link:hover {
     color: rgb(68, 68, 68);
@@ -84,11 +110,4 @@ header .nav-menu span:last-of-type {
 .nav-link span {
     font-size: 1.5rem;
     margin-left: 2rem;
-}
-.menu-container .infomation {
-    margin-bottom: 20px;
-}
-.menu-container .title {
-    color: rgb(160, 155, 151);
-    font-size: 2rem;
 }
