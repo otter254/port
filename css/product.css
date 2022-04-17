@@ -25,9 +25,22 @@ main {
         margin-top: 30vh;
     }
 }
-header .nav-menu {
+#product header .nav-menu {
     fill: rgb(2, 2, 2);
     border: 1px solid rgb(2, 2, 2);
+}
+#product header.is_open .nav-menu {
+    fill: #fff;
+    border: 1px solid #fff;
+}
+#product header.is_open .nav-menu #burger .top,
+#product header.is_open .nav-menu #burger .bot {
+    fill: #fff;
+}
+#product header .nav-menu:hover {
+    fill: #fff;
+    background: rgb(2, 2, 2);
+    transition-duration: .7s;
 }
 
 /* 背景線 */

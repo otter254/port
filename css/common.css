@@ -68,6 +68,9 @@
     #product #cursor {
         background: rgba(14, 14, 14, 0.75);
     }
+    #product #cursor.is_open {
+        background: rgba(255, 255, 255, 0.75);
+    }
     #cursor.none {
         display: none;
     }

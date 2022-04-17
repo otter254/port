@@ -12,11 +12,20 @@ header {
     align-items: center;
     padding: 30px 5%;
 }
-
+@media (max-width: 767px) { 
+    header {
+        padding: 30px 8%;
+    }
+}
 header .nav-logo {
     color: #fff;
     font-size: 3rem;
     font-family: 'Clash Display', sans-serif;
+}
+@media (max-width: 767px) { 
+    header .nav-logo {
+        font-size: 2rem;
+    }
 }
 header.is_open .nav-logo a{
     color: #333;
@@ -33,6 +42,17 @@ header .nav-menu {
     display: flex;
     justify-content: center;
     cursor: none;
+}
+@media (max-width: 767px) { 
+    header .nav-menu {
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (max-width: 767px) { 
+    header .nav-menu #burger {
+        width: 20px;
+    }
 }
 header.is_open .nav-menu #burger .top,
 header.is_open .nav-menu #burger .bot {
@@ -93,7 +113,7 @@ header .nav-menu span:last-of-type {
     display: flex;
     align-items: center;
     color: #fff;
-    height: calc(100vh - 119px);
+    height: 100vh;
     width: 100%;
     position: fixed;
     padding: 0 50px;
@@ -110,6 +130,11 @@ header .nav-menu span:last-of-type {
     margin-left: 5%;
     position: relative;
     top: 20px;
+}
+@media (max-width: 767px) { 
+    .nav-link {
+        font-size: 3rem;
+    }
 }
 #product a.nav-link{
     color: #fff;
