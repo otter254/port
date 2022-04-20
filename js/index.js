@@ -222,6 +222,50 @@ delay: (el, i) => 40 * i
   
 });
 
+// ホバーエフェクト 5
+var hoverDistort = new hoverEffect({
+  parent: document.querySelector('.wrapperfive'),
+  intensity: 0.5,
+  image1: './files/topimages/img04.png',
+  image2: './files/topimages/img04_after.png',
+  displacementImage: '4.png'
+});
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.hero-titlefive');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+$(document).ready(function() {
+
+$('.wrapperfive').hover(         
+function () {
+anime.timeline({loop: false})
+.add({
+targets: '.hero-titlefive .letter',
+translateX: [80,0],
+translateZ: 0,
+opacity: [0,1],
+easing: "easeOutExpo",
+duration: 1400,
+delay: (el, i) => 100 + 40 * i
+})
+},
+
+function () {
+anime.timeline({loop: false})
+.add({
+targets: '.hero-titlefive .letter',
+translateX: [0,-80],
+opacity: [1,0],
+easing: "easeInExpo",
+duration: 800,
+delay: (el, i) => 40 * i
+});         
+}
+);
+  
+});
+
 
 
 // sp・タブレットでもない場合

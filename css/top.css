@@ -61,14 +61,14 @@ a {
       .slide{
         display: block;
         position: absolute;
-        height: 200px !important;
-        width: 400px !important;
+        height: 300px !important;
+        width: 500px !important;
       }
       .slide img {
           width: 100%;
       }
       .slide.one {
-          top: 0;
+          top: -10vh;
       }
       .slide.two {
           top: 30vh;
@@ -76,12 +76,16 @@ a {
       }
       .slide.three {
           bottom: 0;
-          left: -50px;
+          left: -10vw;
       }
       .slide.four {
-          bottom: -20vh;
+          bottom: -30vh;
           right: 10vw;
       }
+      .slide.five {
+        bottom: 30vh;
+        right: 35vw;
+    }
 }
 
 
@@ -117,7 +121,8 @@ button a {
 .wrapper,
 .wrappertwo,
 .wrapperthree,
-.wrapperfour {
+.wrapperfour,
+.wrapperfive{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,11 +144,16 @@ button a {
     width: 30vw;
     height: 25vw;
 }
+.wrapperfive {
+    width: 500px;
+    height: 150px;
+}
 
 .hero-title,
 .hero-titletwo,
 .hero-titlethree,
-.hero-titlefour   {
+.hero-titlefour,
+.hero-titlefive  {
     position: absolute;
     top: 35%;
     left: 15%;
@@ -158,7 +168,8 @@ button a {
 .hero-title .letter,
 .hero-titletwo .letter,
 .hero-titlethree .letter,
-.hero-titlefour .letter  {
+.hero-titlefour .letter,
+.hero-titlefive .letter  {
     display: inline-block;
     opacity: 0;
     background: none;
@@ -167,47 +178,7 @@ button a {
     background: rgb(2,2,2);
     position: relative;
   }
-@media (max-width: 767px) {
-    #container {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-    }
-    h2 {
-        color: #fff;
-        font-family: "Gazebo";
-        font-size: 2rem;
-        margin-bottom: 5vh;
-    }
-    .wrapper,
-    .wrappertwo,
-    .wrapperthree,
-    .wrapperfour {
-        position: inherit;
-        width: 90vw;
-        transform: none;
-    }
-    .wrapper {
-        width: 100%;
-        height: auto;
-    }
-    .wrappertwo {
-        width: 100%;
-        height: 40vh;
-    }
-    .wrapperthree {
-        width: 100%;
-        height: 40vh;
-    }
-    .wrapperfour {
-        width: 100%;
-        height: 40vh;
-    }
-    .slide{
-        width: 90vw;
-        margin: 0 auto 10vh;
-    }
 
-}
 
 @media (max-width: 767px) { 
     html,
