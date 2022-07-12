@@ -72,14 +72,14 @@ a {
       }
       .slide.two {
           top: 30vh;
-          right: -20vw;
+          right: -10vw;
       }
       .slide.three {
           bottom: 0;
-          left: -10vw;
+          left: 0;
       }
       .slide.four {
-          bottom: -30vh;
+          bottom: -20vh;
           right: 10vw;
       }
       .slide.five {
@@ -147,6 +147,11 @@ button a {
 .wrapperfive {
     width: 500px;
     height: 150px;
+}
+canvas {
+    width: 400px!important;
+    height: 250px!important;
+    object-fit: cover;
 }
 
 .hero-title,
