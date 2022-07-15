@@ -96,6 +96,44 @@ main.detail {
     }
 }
 
+#product nav {
+    width: 80vw;
+    margin: auto;
+    margin-block: 40px;
+}
+#product nav .items {
+    display: flex;
+    justify-content: center;
+}
+#product nav .items span{
+    color: #333;
+    background: #fff;
+    padding: 10px 20px;
+    transition-duration: .5s;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    letter-spacing: 0.4em;
+}
+#product nav .items span:not(:last-of-type) {
+    margin-right: 20px;
+}
+#product nav .items span:hover,
+#product nav .items span.active {
+    color: #fff;
+    background: #333;
+}
+@media (max-width: 767px) {
+    #product nav .items {
+        flex-wrap: wrap;
+    }
+    #product nav .items {
+        margin-top: -10px;
+    }
+    #product nav .items span {
+        margin-top: 10px;
+    }
+}
 
 .galley {
     margin: 0 0 0.65rem;
@@ -110,15 +148,38 @@ main.detail {
     transform: translateY(50px);
     transition: 1s;
 } 
+.galley-item.hide {
+    display: none;
+}
+.galley-item.itemshow {
+    display: block;
+    opacity: 1;
+    animation: animate 0.4s ease;
+}
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .galley-item.show {
     opacity: 1;
     transform: none;
+}
+.galley-item {
+    overflow: hidden;
 }
 .galley-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition-duration: .5s;
 } 
+.galley-item img:hover {
+    transform: scale(1.1);
+}
 @media (min-width: 767px) {
     .galley {
         display: grid;
