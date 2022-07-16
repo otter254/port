@@ -275,5 +275,59 @@ main.detail section {
     border-right: 1px solid rgb(199, 199, 199);
     padding-bottom: 100px;
 }
+@media (max-width: 960px) {
+    main.detail section {
+        width: 90vw;
+    }
+}
 
 
+/* swiper ここから */
+section.work_swiper {
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-block: 30px;
+}
+section.work_swiper .swiper-main{
+    width: 60%;
+    margin: auto;
+    overflow: visible;
+}
+section.work_swiper .swiper-main .swiper-button-prev,
+section.work_swiper .swiper-main .swiper-button-next {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+}
+section.work_swiper .swiper-main .swiper-button-prev {
+    left: -100px;
+}
+section.work_swiper .swiper-main .swiper-button-next {
+    right: -100px;
+}
+section.work_swiper .swiper-main .swiper-button-prev:hover,
+section.work_swiper .swiper-main .swiper-button-next:hover {
+    opacity: .8;
+}
+section.work_swiper .swiper-main .swiper-button-prev::after,
+section.work_swiper .swiper-main .swiper-button-next::after  {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 960px) {
+    section.work_swiper .swiper-main .swiper-button-prev,
+    section.work_swiper .swiper-main .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    }
+    section.work_swiper .swiper-main .swiper-button-prev {
+        left: -3rem;
+    }
+    section.work_swiper .swiper-main .swiper-button-next {
+        right: -3rem;
+    }
+}
+
+/* swiper ここまで */
