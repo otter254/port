@@ -248,5 +248,3 @@ if (!(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('
       });
   }
 }
-
-

@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -39,6 +40,18 @@
 	<div class="menu_bg bg_03"></div>
 	<div class="menu_bg bg_04"></div>
 	<div class="menu_bg bg_05"></div>
+
+	<div class="loading active" id="loading">
+		<div class="container">
+			<div class="ball"></div>
+			<div class="ball"></div>
+			<div class="ball"></div>
+			<div class="ball"></div>
+			<div class="ball"></div>
+			<div class="ball"></div>
+			<div class="ball"></div>
+		  </div>
+	</div>
 
 	<div class="menu">
 		<div class="menu-container">
@@ -87,7 +100,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="l-sm">
+	<div class="l-sm" id="sp_swiper">
 		<!-- Swiper -->
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
@@ -145,9 +158,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	
 	<script src="hover-effect.umd.js"></script>
+	<script src="./js/loading.js" defer></script>
 	<div id="cursor"></div>
 </body>
-<script src="./js/hamburger.js"></script>
+<script src="./js/hamburger.js" defer></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 	//PC環境の場合
@@ -157,6 +171,7 @@
 			dataType: 'script',
 			cache: false
 	  });
+	  document.getElementById("sp_swiper").remove()
 	//モバイル環境の場合
 	} else {
 	   $.ajax({
@@ -164,6 +179,7 @@
 			dataType: 'script',
 			cache: false
 		});
+		document.getElementById("container").remove()
 	};
 });
 </script>

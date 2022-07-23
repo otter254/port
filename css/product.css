@@ -43,9 +43,6 @@ img {
 main {
     margin-top: 40vh;
 }
-main.detail {
-    margin-top: 0;
-}
 @media (max-width: 767px) {
     main {
         margin-top: 30vh;
@@ -230,6 +227,13 @@ main.detail {
     }
 }
 
+/* 詳細ページ */
+main.detail {
+    margin-top: 0;
+}
+.detail {
+    font-family: 'Noto Sans JP', sans-serif;
+}
 .galley__detail {
     margin: 0 0 0.65rem;
     width: 100%;
@@ -258,12 +262,17 @@ main.detail {
         width: 90vw;
     }
 }
-
+.galley__detail .en {
+    font-family: 'Clash Display', sans-serif;
+}
+.galley__detail .title h1 {
+    color: rgb(80, 80, 80);
+    letter-spacing: .1rem;
+}
 .galley__detail .title,
 .galley__detail .about{
     display: flex;
     border-bottom: 1px solid rgb(199, 199, 199);
-    font-family: 'Clash Display', sans-serif;
 }
 .galley__detail .title div h1,
 .galley__detail .about div ul{
@@ -313,10 +322,26 @@ main.detail {
     .galley__detail .content.col2 {
         display: block;
     }
+    .galley__detail .content.col2 figure {
+        margin-bottom: 20px;
+    }
     .galley__detail .content.col2 .txt,
     .galley__detail .content.col2 figure {
-    width: 100%;
-}
+        width: 100%;
+        padding-left: 0;
+    }
+    .galley__detail .title div:first-of-type{
+        width: 80%;
+    }
+    .galley__detail .title div:last-of-type{
+        width: 20%;
+    }
+    .galley__detail .about div:first-of-type {
+        width: 10%;
+    }
+    .galley__detail .about div:last-of-type {
+        width: 90%;
+    }
 }
 
 main.detail section {
