@@ -151,6 +151,7 @@ button a {
 canvas {
     width: 400px!important;
     height: 250px!important;
+    object-fit: cover;
 }
 
 .hero-title,
