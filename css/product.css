@@ -256,6 +256,7 @@ main.detail {
 @media (max-width: 960px) {
     .galley__detail--main.vertical{
         width: 90vw;
+        padding-top: 20vh;
     }
 }
 .galley__detail .en {
@@ -390,12 +391,19 @@ section.work_swiper .swiper-main .swiper-button-next::after  {
     font-size: 1.8rem;
 }
 section.work_swiper .swiper-main figcaption {
-    min-height: 50px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 960px) {
     section.work_swiper .swiper-main {
         width: 90%;
+    }
+
+    .swiper-controller {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 8vh;
     }
     section.work_swiper .swiper-main .swiper-button-prev,
     section.work_swiper .swiper-main .swiper-button-next {
@@ -404,13 +412,11 @@ section.work_swiper .swiper-main figcaption {
     }
     section.work_swiper .swiper-main .swiper-button-prev {
         left: 1rem;
-        bottom: 0;
-        top: auto;
+        position: inherit;
     }
     section.work_swiper .swiper-main .swiper-button-next {
         right: 1rem;
-        bottom: 0;
-        top: auto;
+        position: inherit;
     }
 }
 
