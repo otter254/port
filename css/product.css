@@ -303,6 +303,9 @@ main.detail {
     margin-block: 40px;
     margin-inline: 30px;
 }
+.galley__detail .content:not(col2) figure{
+    margin-bottom: 40px;
+}
 .galley__detail .content.col2 {
     display: flex;
 }
