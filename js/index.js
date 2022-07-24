@@ -95,7 +95,7 @@ var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrappertwo'),
   intensity: 0.5,
   image1: './files/topimages/img02.png',
-  image2: './files/topimages/img02.png',
+  image2: './files/topimages/img02_after.png',
   displacementImage: '4.png'
 });
 
