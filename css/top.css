@@ -167,6 +167,7 @@ canvas {
     letter-spacing: .5rem;
     font-size: 3rem;
     background: none;
+    font-family: 'Clash Display', sans-serif;
 }
 
 .hero-title .letter,
@@ -215,6 +216,21 @@ canvas {
       height: 300px;
       background: #fff;
       color: #fff;
+    }
+
+    .swiper-slide .imgBx {
+        height: 100%;
+    }
+    .swiper-slide .imgBx img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .swiper-slide .datails {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        font-family: 'Clash Display', sans-serif;
+        letter-spacing: .2rem;
     }
 
     .swiper-slide img {
