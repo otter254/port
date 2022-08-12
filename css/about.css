@@ -1,0 +1,81 @@
+body#about {
+    background: rgb(2,2,2);
+}
+
+body#about header .nav-logo #logo {
+    color: #fff;
+}
+body#about header .nav-logo #logo.active {
+    color: rgb(2,2,2);
+}
+
+.about__main {
+    margin-top: 0;
+    color: #fff;
+}
+.about__main section {
+    width: 70%;
+    margin: auto;
+    border-left: 1px solid rgb(199, 199, 199);
+    border-right: 1px solid rgb(199, 199, 199);
+}
+
+.about__main section.about__head .img {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.about__main section.about__head .img figure {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about__main section.about__head {
+    height: 100vh;
+}
+.about__main section.about__head .img img {
+    object-fit: cover;
+    height: 100%;
+}
+.about__main section.about__head .namebox {
+    border-top: 1px solid #fff;
+    height: 20vh;
+    display: flex;
+}
+.about__main section.about__head .namebox > div:first-of-type {
+    width: 20%;
+    border-right: 1px solid #fff;
+}
+.about__main section.about__head .namebox > div:last-of-type {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.about__main section.about__head .namebox .name {
+    position: relative;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+.about__main section.about__head .namebox .name::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about__main section.about__head .namebox h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.about__main section.about__head .namebox h3 {
+    font-family: 'Clash Display', sans-serif;
+}
+@media (max-width: 960px) {
+    .about__main section {
+        width: 90vw;
+    }
+}

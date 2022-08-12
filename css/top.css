@@ -47,7 +47,7 @@ a {
 }
 
 
-@media (min-width: 767px) { 
+@media (min-width: 900px) { 
     #container{
         position: relative;
         height: 100vh;
@@ -181,10 +181,11 @@ canvas {
 #container{
     background: rgb(2,2,2);
     position: relative;
-  }
+    max-width: 2000px;
+}
 
 
-@media (max-width: 767px) { 
+@media (max-width: 900px) { 
     html,
     body {
       position: relative;
