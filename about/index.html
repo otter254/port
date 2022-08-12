@@ -5,23 +5,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../css/header.css">
-	<link rel="stylesheet" href="../../css/common.css">
-	<link rel="stylesheet" href="../../css/product.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/about.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 	<link href="https://api.fontshare.com/css?f[]=clash-display@400,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@300;500&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-	<title>Document</title>
+	<title>PORTFOLIO / Takeshi Nishikawa</title>
 </head>
 
 
-<body id="product">
+<body id="about">
 	<header class="nav-bar" id="header">
-		<div class="nav-logo"><a href="../../index.html" id="logo">PortFolio</a></div>
+		<div class="nav-logo"><a href="../index.html" id="logo">PortFolio</a></div>
 		<div class="nav-menu menuBtn">
 			<svg id="burger" width="30" class="openmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
 				<path class="top" d="M0 9h30v2H0z"/>
@@ -40,43 +43,29 @@
 		<div class="menu-container">
 			<ul class="nav-list">
 				<li><a href="../index.html" class="nav-link nav-link01">Product</a></li>
-				<li><a href="../../about/" class="nav-link nav-link02">About</a></li>
+				<li><a href="../about/" class="nav-link nav-link02">About</a></li>
 				<li><a href="mailto:&#110;&#105;&#115;&#104;&#105;&#107;&#97;&#119;&#97;&#95;&#116;&#97;&#107;&#101;&#115;&#104;&#105;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#106;&#112;" class="nav-link nav-link03">Contact</a></li>
-
 			</ul>
 		</div>
 	</div>
-	<main class="detail">
-		<div class="galley__detail">
-			<div class="galley__detail--main vertical">
-				<img src="../../files/images/skech/product02.webp" alt="">
+	<main class="about__main">
+		<section class="about__head">
+			<div class="img">
+				<figure>
+					<img src="../files/topimages/img03.png" alt="">
+				</figure>
 			</div>
-		</div>
-		<section class="galley__detail">
-			<div class="title">
-				<div>
-					<h1>鉛筆デッサン</h1>
-				</div>
-				<div></div>
-			</div>
-			<div class="about">
+			<div class="namebox">
 				<div></div>
 				<div>
-					<ul>
-						<li>製作時間：８時間</li>
-						<li>使用画材：鉛筆、ケント紙</li>
-					</ul>
+					<div class="name">
+						<h2>西川　武志</h2>
+						<h3>TAKESHI　NISHIKAWA</h3>
+					</div>
 				</div>
 			</div>
-			<div class="content">
-				<p>
-					大学受験対策で描いたデッサンです。
-				</p>
-			</div>
-
-			<div class="c-back-btn">
-				<a href="../index.html">back</a>
-			</div>
+		</section>
+		<section class="about__body">
 		</section>
 	</main>
 
@@ -84,8 +73,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<div id="cursor"></div>
 </body>
-<script src="../../js/product.js"></script>
-<script src="../../js/hamburger.js"></script>
+<script src="../js/product.js"></script>
+<script src="../js/hamburger.js"></script>
 
 
 </html>
