@@ -132,6 +132,21 @@ header .nav-menu span:last-of-type {
     position: relative;
     top: 20px;
 }
+.nav-list li dl {
+    display: flex;
+    margin-top: 20px;
+}
+.nav-list li dl dd {
+    margin-left: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.nav-list li dl dd:hover {
+    opacity: .8;
+}
+.nav-link.icon {
+    width: 30px;
+    transform: none!important;
+}
 @media (max-width: 767px) { 
     .nav-link {
         font-size: 3rem;

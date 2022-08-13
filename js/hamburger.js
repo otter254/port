@@ -22,7 +22,9 @@ menuToggle
   .to(' .menu', .3, { bottom:0 }, '-= .2')
   .to(' .nav-link01', .5, { top: 0, opacity: 1 }, '-= .3')
   .to(' .nav-link02', .5, { top: 0, opacity: 1 }, '-= .3')
-  .to(' .nav-link03', .5, { top: 0, opacity: 1 }, '-= .3') ,
+  .to(' .nav-link03', .5, { top: 0, opacity: 1 }, '-= .3')
+  .to(' .nav-link04', .5, { top: 0, opacity: 1 }, '-= .3')
+  .to(' .nav-link05', .5, { top: 0, opacity: 1 }, '-= .3') ,
   
 
 controlit.click(function () {
