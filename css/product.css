@@ -57,6 +57,12 @@ main {
     main {
         margin-top: 30vh;
     }
+    .c-back-btn {
+        width: 160px;
+    }
+    .c-back-btn a {
+        font-size: 1.5rem;
+    }
 }
 #product header .nav-menu {
     fill: rgb(2, 2, 2);
@@ -278,6 +284,13 @@ main.detail {
 }
 
 @media (max-width: 960px) {
+    .galley__detail--main {
+        height: auto;
+        margin-top: 15vh;
+    }
+    .galley__detail--main img {
+        object-fit: inherit;
+    }
     .galley__detail--main.vertical{
         width: 90vw;
         padding-top: 20vh;
@@ -345,6 +358,9 @@ main.detail {
 }
 
 @media (max-width: 960px) {
+    .galley__detail .content {
+        margin-inline: 10px;
+    }
     .galley__detail .content.col2 {
         display: block;
     }
@@ -355,6 +371,9 @@ main.detail {
     .galley__detail .content.col2 figure {
         width: 100%;
         padding-left: 0;
+    }
+    .galley__detail .content iframe {
+        height: 300px;
     }
     .galley__detail .title div:first-of-type{
         width: 80%;
