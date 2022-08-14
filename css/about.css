@@ -70,9 +70,41 @@ body#about header .nav-logo #logo.active {
 }
 .about__main section.about__head .namebox h2 {
     font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Shippori Mincho', serif;
 }
 .about__main section.about__head .namebox h3 {
     font-family: 'Clash Display', sans-serif;
+}
+.about__main section.about__body {
+    border-top: 1px solid #fff;
+    display: flex;
+    padding: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 400;
+}
+.about__main section.about__body .title {
+    width: 20%;
+}
+.about__main section.about__body .title h3 {
+    font-weight: 400;
+}
+.about__main section.about__body .title span {
+    font-family: 'Clash Display', sans-serif;
+    display: flex;
+    align-items: center;
+
+}
+.about__main section.about__body .title span::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+.about__main section.about__body ul {
+    width: 80%;
 }
 @media (max-width: 960px) {
     .about__main section {
