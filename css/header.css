@@ -147,6 +147,9 @@ header .nav-menu span:last-of-type {
     width: 30px;
     transform: none!important;
 }
+#product .nav-link.icon {
+    filter: invert(1);
+}
 @media (max-width: 767px) { 
     .nav-link {
         font-size: 3rem;

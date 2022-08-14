@@ -133,8 +133,8 @@ button a {
     height: 40vh;
 }
 .wrappertwo {
-    width: 20vw;
-    height: 60vh;
+    width: 100%;
+    height: auto;
 }
 .wrapperthree {
     width: 30vw;
@@ -186,7 +186,7 @@ canvas {
 }
 
 
-@media (max-width: 900px) { 
+@media (max-width: 1025px) { 
     html,
     body {
       position: relative;
@@ -205,8 +205,11 @@ canvas {
     .swiper {
       width: 100%;
         height: 100vh;
-        padding-top: 25vh;
         z-index: 0;
+    }
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
     }
 
     .swiper-slide {
@@ -228,7 +231,7 @@ canvas {
 
     .swiper-slide .datails {
         margin-top: 10px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: 'Clash Display', sans-serif;
         letter-spacing: .2rem;
     }

@@ -45,7 +45,7 @@
 }
 
 /* カーソル pcのみ*/
-@media (min-width: 900px) { 
+@media (min-width: 1026px) { 
     html,body,a{
         cursor: none;
     }
