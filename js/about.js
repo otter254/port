@@ -1,3 +1,19 @@
+// スクロールイベント
+const targetElement = document.querySelectorAll(".js-anim");
+console.log(window.innerHeight)
+document.addEventListener("scroll", function() {
+  for (let i = 0; i < targetElement.length; i++) {
+    const getElementDistance = targetElement[i]
+    .getBoundingClientRect().top + targetElement[i].clientHeight * .6
+    // if (i == 1) {
+    //   console.log(getElementDistance)
+    // }
+    if (window.innerHeight > getElementDistance) {
+      targetElement[i].classList.add("textanim")
+    }
+  }
+})
+
 // Wrap every letter in a span
 var textWrapper = document.querySelectorAll('.textanim');
 for (let index = 0; index < textWrapper.length; index += 1) {
@@ -24,21 +40,7 @@ anime.timeline({loop: false})
   //   delay: (el, i) => 100 + 30 * i
   // });
 
-  // スクロールイベント
-// const targetElement = document.querySelectorAll(".js-anim");
-// console.log(window.innerHeight)
-// document.addEventListener("scroll", function() {
-//   for (let i = 0; i < targetElement.length; i++) {
-//     const getElementDistance = targetElement[i]
-//     .getBoundingClientRect().top + targetElement[i].clientHeight * .6
-//     // if (i == 1) {
-//     //   console.log(getElementDistance)
-//     // }
-//     if (window.innerHeight > getElementDistance) {
-//       targetElement[i].classList.add("textanim")
-//     }
-//   }
-// })
+
 
 
 // sp・タブレットでもない場合
