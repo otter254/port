@@ -61,7 +61,7 @@ a {
       .slide{
         display: block;
         position: absolute;
-        height: 300px !important;
+        height: 250px !important;
         width: 500px !important;
       }
       .slide img {
@@ -121,20 +121,19 @@ button a {
 .wrapper,
 .wrappertwo,
 .wrapperthree,
-.wrapperfour,
-.wrapperfive{
+.wrapperfour {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .wrapper {
-    width: 50vw;
-    height: 40vh;
+    width: 30vw;
+    height: 25vw;
 }
 .wrappertwo {
-    width: 100%;
-    height: auto;
+    width: 30vw;
+    height: 25vw;
 }
 .wrapperthree {
     width: 30vw;
@@ -144,20 +143,16 @@ button a {
     width: 30vw;
     height: 25vw;
 }
-.wrapperfive {
-    width: 500px;
-    height: 150px;
-}
 canvas {
     width: 400px!important;
     height: 250px!important;
+    object-fit: fill;
 }
 
 .hero-title,
 .hero-titletwo,
 .hero-titlethree,
-.hero-titlefour,
-.hero-titlefive  {
+.hero-titlefour {
     position: absolute;
     top: 35%;
     left: 15%;
@@ -165,9 +160,9 @@ canvas {
     color: white;
     font-family: "Gazebo";
     letter-spacing: .5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background: none;
-    font-family: 'Clash Display', sans-serif;
+    /* font-family: 'Clash Display', sans-serif; */
 }
 
 .hero-title .letter,

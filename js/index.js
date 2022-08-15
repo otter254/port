@@ -50,8 +50,8 @@ $(window).on('resize scroll', function(){
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrapper'),
   intensity: 0.5,
-  image1: './files/topimages/mountain.png',
-  image2: './files/topimages/mountain_after.png',
+  image1: './files/topimages/img01.jpg',
+  image2: './files/topimages/img01_after.jpg',
   displacementImage: '4.png'
 });
 
@@ -94,8 +94,8 @@ delay: (el, i) => 40 * i
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrappertwo'),
   intensity: 0.5,
-  image1: './files/topimages/img02.png',
-  image2: './files/topimages/img02_after.png',
+  image1: './files/topimages/img02.jpg',
+  image2: './files/topimages/img02_after.jpg',
   displacementImage: '4.png'
 });
 
