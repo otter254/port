@@ -81,3 +81,12 @@ menu.addEventListener('mouseout' , function(event){
 })
 
 
+var scroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+  direction: 'horizontal',
+  multiplier: 1,
+  horizontalGesture: true
+});
+
+
