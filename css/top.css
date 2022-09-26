@@ -46,45 +46,56 @@ a {
     height: 100%;
 }
 
-
-@media (min-width: 900px) { 
-    #container{
-        position: relative;
-        height: 100vh;
+#container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(2,2,2);
+    }
+    .slide{
+    display: block;
+    position: absolute;
+    height: 250px !important;
+    width: 500px !important;
+    }
+    .slide img {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        background-color: rgb(2,2,2);
-      }
-      .slide{
-        display: block;
-        position: absolute;
-        height: 250px !important;
-        width: 500px !important;
-      }
-      .slide img {
-          width: 100%;
-      }
-      .slide.one {
-          top: -10vh;
-      }
-      .slide.two {
-          top: 30vh;
-          right: -10vw;
-      }
-      .slide.three {
-          bottom: 0;
-          left: 0;
-      }
-      .slide.four {
-          bottom: -20vh;
-          right: 10vw;
-      }
-      .slide.five {
-        bottom: 30vh;
-        right: 35vw;
+    }
+    .slide.one {
+        top: -10vh;
+    }
+    .slide.two {
+        top: 30vh;
+        right: -10vw;
+    }
+    .slide.three {
+        bottom: 0;
+        left: 0;
+    }
+    .slide.four {
+        bottom: -20vh;
+        right: 10vw;
+    }
+@media (min-width: 1950px) { 
+    
+    .slide.one {
+        top: 10vh;
+    }
+    .slide.two {
+        top: 30vh;
+        right: 10vw;
+    }
+    .slide.three {
+        top: 30vh;
+        left: 10vw;
+    }
+    .slide.four {
+        bottom: 0;
+        right: 30vw;
     }
 }
 
@@ -148,6 +159,12 @@ canvas {
     height: 250px!important;
     object-fit: fill;
 }
+@media (min-width: 1950px) { 
+    canvas {
+        width: 600px!important;
+        height: 375px!important;
+    }
+}
 
 .hero-title,
 .hero-titletwo,
@@ -177,7 +194,6 @@ canvas {
 #container{
     background: rgb(2,2,2);
     position: relative;
-    max-width: 2000px;
 }
 
 
