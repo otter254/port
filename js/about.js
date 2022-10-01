@@ -80,13 +80,14 @@ menu.addEventListener('mouseout' , function(event){
   cursor.classList.remove('hov_');
 })
 
-
-var scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true,
-  direction: 'horizontal',
-  multiplier: 1,
-  horizontalGesture: true
-});
-
-
+var clipboard = new Clipboard('.copy_btn');    //clipboard.min.jsが動作する要素をクラス名で指定
+const copybtn = document.getElementById('copy_btn')
+//クリックしたときの挙動
+copybtn.addEventListener("click", function() {
+  copybtn.classList.add("copied")
+  copybtn.innerHTML="Copied";
+  setTimeout(function(){
+    copybtn.classList.remove("copied")
+    copybtn.innerHTML="CopyEmail";
+  },3000);
+})

@@ -18,10 +18,6 @@ body#about header .nav-logo #logo.active {
     height: 100vh;
 }
 .about__main section {
-    /* width: 50%;
-    margin: 0 0 0 auto; */
-    /* border-left: 1px solid rgb(199, 199, 199);
-    border-right: 1px solid rgb(199, 199, 199); */
     display: inline-block;
     width: max-content;
     height: 100%;
@@ -29,137 +25,124 @@ body#about header .nav-logo #logo.active {
 }
 .about__main section.about__head {
     padding-inline: 5%;
-}
-.about__main section.about__head .img {
-    height: 100%;
-    display: grid;
-    place-items: center;
+    position: fixed;
+    top: 50%;
 }
 
-.about__main section.about__head .img figure {
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    background: #fff;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.about__main section.about__head .img {
-    display: flex;
-    align-items: center;
-}
-.about__main section.about__head .img img {
-    object-fit: cover;
-    height: 100%;
-}
-.about__main section.about__head .img figure {
-    width: 250px;
-}
-.about__main section.about__head .img h2 {
-    font-size: 2rem;
-    font-family: 'Clash Display', sans-serif;
-    letter-spacing: .2rem;
-    font-weight: 400;
-    padding-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-.about__main section.about__head .img h2::before {
-    content: "";
-    width: 20px;
-    height: 3px;
-    background: #fff;
-    display: inline-block;
-    margin-right: 20px;
-}
 .about__main section.about__head .title {
     padding-left: 50px;
-}
-.about__main section.about__head .namebox .name {
-    position: relative;
-}
-.about__main section.about__head .namebox .name::before {
-    content: "";
-    width: 5px;
-    height: 100%;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.about__main section.about__head .name h3 {
-    font-family: 'Shippori Mincho', serif;
-    font-size: 2rem;
-    letter-spacing: .2rem;
 }
 .about__main section.about__head .name span {
     font-family: 'Clash Display', sans-serif;
     font-size: 1.7rem;
     letter-spacing: .2rem;
 }
-@media (max-width: 960px) {
-    .about__main section {
-        width: 90vw;
-    }
-    .about__main section.about__head .img {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .about__main section.about__head .img figure {
-        margin-bottom: 40px;
-    }
-    .about__main section.about__head .img .title {
-        padding: 0;
-        padding-left: 5vw;
-        width: 100%;
-    }
-    .about__main section.about__head .img h2 {
-        font-size: 1.5rem;
-    }
-    .about__main section.about__head .img .name h3 {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-    }
-    .about__main section.about__head .img .name span {
-        font-size: 1.2rem;
-    }
+.about__main section.about__head .name span span {
+    margin-right: 10px;
 }
+@media (max-width: 960px) {
+}
+.about__main section.about__body {
+    margin-left: 50%;
+    margin-top: 30vh;
+}
+.about__main section.about__body .namebox h3{
+    font-family: fot-klee-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: .2em;
+}
+.about__main section.about__body .namebox div {
+    font-size: 1rem;
+}
+.about__main section.about__body .namebox div p{
+    line-height: 1.4;
+}
+.about__main section.about__body .namebox .jp {
+    font-family: fot-klee-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .2em;
+}
+.about__main section.about__body .namebox .en {
+    font-family: 'Clash Display', sans-serif;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+.about__main section.about__body .text {
+    margin-top: 40px;
+}
+.about__main section.about__body .text h4 {
+    margin-bottom: 10px;
+}
+.about__main section.about__body .text .en {
+    font-size: 1.2rem;
+    font-family: 'Clash Display', sans-serif;
+    letter-spacing: .3em;
+}
+.about__main section.about__body .text .jp {
+    font-family: fot-klee-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .2em;
+}
+.about__main section.about__body .text.sns ul li + li {
+    margin-top: 10px;
+}
+.about__main section.about__body .text.sns ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.about__main section.about__body .text.sns ul li a span {
+    margin-right: 20px;
+}
+.about__main section.about__body .text.sns ul li img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+.about__main section.about__body .text.contact .copy_btn {
+    cursor: pointer;;
+}
+    
 
-/* .about__main section.about__foot {
-    padding-block: 100px;
-} */
-.about__main section.about__foot .c-back-btn {
-    margin-top: 0;
+.about__main section.about__body .c-back-btn {
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
 }
-.about__main section.about__foot .c-back-btn a {
+.about__main section.about__body .c-back-btn a {
     width: 220px;
     background: #fff;
     color: rgb(2,2,2);
 }
-.about__main section.about__foot .c-back-btn a:hover {
+.about__main section.about__body .c-back-btn a:hover {
     border: none;
     background: rgb(2,2,2);
     color: #fff;
 }
 @media (max-width: 960px) {
-    .about__main section.about__foot {
+    .about__main section.about__body {
         padding-block: 5vh 10vh;
     }
-    .about__main section.about__foot .c-back-btn {
+    .about__main section.about__body .c-back-btn {
         display: block;
         width: 100%;
     }
-    .about__main section.about__foot .c-back-btn a {
+    .about__main section.about__body .c-back-btn a {
         display: block;
         margin: auto;
     }
-    .about__main section.about__foot .c-back-btn a:last-of-type {
+    .about__main section.about__body .c-back-btn a:last-of-type {
         margin-top: 20px;
     }
 }
 
+
+/* テキストアニメーション */
 .textanim .letter {
     display: inline-block;
     line-height: 1em;
