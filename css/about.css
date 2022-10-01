@@ -41,7 +41,14 @@ body#about header .nav-logo #logo.active {
     margin-right: 10px;
 }
 @media (max-width: 960px) {
+    .about__main section.about__head .title {
+        padding-left: 0;
+    }
+    .about__main section.about__head .name span {
+        writing-mode: vertical-rl;
+    }
 }
+
 .about__main section.about__body {
     margin-left: 50%;
     margin-top: 30vh;
@@ -125,8 +132,14 @@ body#about header .nav-logo #logo.active {
     color: #fff;
 }
 @media (max-width: 960px) {
+    .about__main section.about__head {
+        padding-inline: 0;
+        top: 20vh;
+    }    
     .about__main section.about__body {
         padding-block: 5vh 10vh;
+        margin-left: 15vw;
+        width: 85vw;
     }
     .about__main section.about__body .c-back-btn {
         display: block;
