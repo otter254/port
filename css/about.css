@@ -33,7 +33,7 @@ body#about header .nav-logo #logo.active {
 .about__main section.about__head .name span span {
     margin-right: 10px;
 }
-@media (max-width: 960px) {
+@media (max-width: 1025px) {
     .about__main section.about__head .title {
         padding-left: 0;
     }
@@ -41,6 +41,7 @@ body#about header .nav-logo #logo.active {
         writing-mode: vertical-rl;
     }
 }
+
 
 .about__main section.about__body {
     margin-left: 50%;
@@ -81,6 +82,9 @@ body#about header .nav-logo #logo.active {
 }
 .about__main section.about__body .text p + p{
     margin-top: 20px;
+}
+.about__main section.about__body .text p {
+    line-height: 1.4;
 }
 .about__main section.about__body .text .en {
     font-size: 1.2rem;
@@ -130,15 +134,16 @@ body#about header .nav-logo #logo.active {
     background: rgb(2,2,2);
     color: #fff;
 }
-@media (max-width: 960px) {
+@media (max-width: 1025px) {
     .about__main section.about__head {
         padding-inline: 0;
-        top: 20vh;
+        top: 10vh;
     }    
     .about__main section.about__body {
         padding-block: 5vh 10vh;
         margin-left: 15vw;
         width: 85vw;
+        margin-top: 10vh;
     }
     .about__main section.about__body .c-back-btn {
         display: block;
