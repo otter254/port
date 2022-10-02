@@ -186,7 +186,7 @@
 <script type="text/javascript">
 
 jQuery(document).ready(function($) {
-	if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+	if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0 || window.matchMedia('(max-width: 1024px)').matches) {
 		$.ajax({
 			url: './js/swiper.js',
 			dataType: 'script',

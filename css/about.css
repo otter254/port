@@ -13,14 +13,7 @@ body#about header .nav-logo #logo.active {
     margin-top: 0;
     color: #fff;
 }
-.about__main article {
-    margin: 0 0 0 auto;
-    height: 100vh;
-}
 .about__main section {
-    display: inline-block;
-    width: max-content;
-    height: 100%;
     position: relative;
 }
 .about__main section.about__head {
@@ -52,6 +45,9 @@ body#about header .nav-logo #logo.active {
 .about__main section.about__body {
     margin-left: 50%;
     margin-top: 30vh;
+    width: 50%;
+    padding-right: 10%;
+    padding-bottom: 20vh;
 }
 .about__main section.about__body .namebox h3{
     font-family: fot-klee-pro, sans-serif;
@@ -82,6 +78,9 @@ body#about header .nav-logo #logo.active {
 }
 .about__main section.about__body .text h4 {
     margin-bottom: 10px;
+}
+.about__main section.about__body .text p + p{
+    margin-top: 20px;
 }
 .about__main section.about__body .text .en {
     font-size: 1.2rem;
