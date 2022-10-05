@@ -313,6 +313,7 @@ main.detail {
 .galley__detail .title div h1,
 .galley__detail .about div ul{
     padding: 40px 20px;
+    font-weight: 400;
 }
 .galley__detail .title div:first-of-type{
     width: 60%;
@@ -438,6 +439,8 @@ section.work_swiper .swiper-main .swiper-button-next::after  {
 }
 section.work_swiper .swiper-main figcaption {
     margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
 }
 
 @media (max-width: 960px) {
