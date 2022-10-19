@@ -182,8 +182,8 @@ delay: (el, i) => 40 * i
 var hoverDistort = new hoverEffect({
   parent: document.querySelector('.wrapperfour'),
   intensity: 0.5,
-  image1: './files/topimages/img03.png',
-  image2: './files/topimages/img03_after.png',
+  image1: './files/topimages/img04.png',
+  image2: './files/topimages/img04_after.png',
   displacementImage: '4.png'
 });
 

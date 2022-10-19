@@ -137,7 +137,7 @@ body#about header .nav-logo #logo.active {
 @media (max-width: 1025px) {
     .about__main section.about__head {
         padding-inline: 0;
-        top: 10vh;
+        top: 15vh;
     }    
     .about__main section.about__body {
         padding-block: 5vh 10vh;
